@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="190.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            
+                 <MenuBar AnchorPane.topAnchor="0.0">
+                   <menus>
+                     <Menu mnemonicParsing="false" text="_File">
+                       <items>                        
+                         <MenuItem mnemonicParsing="true" onAction="#onMenuExit" text="E_xit" />
+                       </items>
+                     </Menu>
+                   </menus>
+                 </MenuBar>
+            <FlowPane prefHeight="384.0" prefWidth="600.0">
+               <children>
+                  <ListView fx:id="listClasses" prefHeight="276.0" prefWidth="200.0" />
+                  <ListView fx:id="listFields" prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea fx:id="newAttributes" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </FlowPane>
+            <FlowPane hgap="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="load" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onLoad" text="Load" />
+                  <Button fx:id="addFields" mnemonicParsing="false" onAction="#onAddFields" text="Add fields" />
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onSave" text="Save" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>      
+   </children>
+</AnchorPane>
